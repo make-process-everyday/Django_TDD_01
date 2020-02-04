@@ -1,13 +1,11 @@
-import time
 
-from django.template.loader import render_to_string
-from django.urls import resolve
 from lists.models import Item
 from django.test import TestCase
 # unittest.TestCase 的增强版
 
 # Create your tests here.
 class HomePageTest(TestCase):
+
 
     def test_home_page_returns_correct_html(self):
         # 单元测试
