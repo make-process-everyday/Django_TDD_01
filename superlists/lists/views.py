@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from lists.models import Item
+from lists.models import Item, List
 from django.http import HttpResponse
 
 # 在这里编写视图,视图函数有两个作用：

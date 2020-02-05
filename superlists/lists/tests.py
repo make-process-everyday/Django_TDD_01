@@ -1,14 +1,11 @@
 
-from lists.models import Item
+from lists.models import Item, List
 from django.test import TestCase
 # unittest.TestCase 的增强版
 
 # Create your tests here.
 class HomePageTest(TestCase):
-
-
     def test_home_page_returns_correct_html(self):
-        # 单元测试
         response = self.client.get('/')
         # Django TestCase 类提供的测试方法，用于检查响应是使用哪个模板渲染的
         self.assertTemplateUsed(response, 'home.html')
